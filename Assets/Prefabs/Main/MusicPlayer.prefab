@@ -11,7 +11,7 @@ GameObject:
   - 82: {fileID: 8200000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: Music Player
+  m_Name: MusicPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
