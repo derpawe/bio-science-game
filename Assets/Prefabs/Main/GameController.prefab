@@ -39,9 +39,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c8b23df20f2c4d8b763f1c70b8fb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthSlider: {fileID: 0}
   playerMaxHealth: 100
   decrementPlayerHealthValue: 1
+  _playerCurrentHealth: 100
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

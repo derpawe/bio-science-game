@@ -4,22 +4,31 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-
-    public Slider healthSlider;
-
     public float playerMaxHealth = 100f;
     public float decrementPlayerHealthValue = 1f;
 
-    private float _playerCurrentHealth;
+    public float _playerCurrentHealth;
+
+    private float _playerHealthOriginal;
+
+    static GameController instance = null;
 
     // Use this for initialization
     void Start()
     {
-        DontDestroyOnLoad(gameObject);
-        _playerCurrentHealth = playerMaxHealth;
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+            print("Duplicate gameController self-destructing!");
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
 
-        healthSlider.maxValue = playerMaxHealth;
-        healthSlider.value = _playerCurrentHealth;
+        _playerHealthOriginal = playerMaxHealth;
+        _playerCurrentHealth = playerMaxHealth;
 
         InvokeRepeating("DecrementPlayerHealth", 0.0001f, 1f);
     }
@@ -27,12 +36,21 @@ public class GameController : MonoBehaviour
     private void DecrementPlayerHealth()
     {
         _playerCurrentHealth -= decrementPlayerHealthValue;
-        healthSlider.value = _playerCurrentHealth;
     }
 
     public void UpdatePlayerHealth(float health)
     {
         _playerCurrentHealth += health;
-        healthSlider.value = _playerCurrentHealth;
+    }
+
+    public void resetLevel()
+    {
+        _playerCurrentHealth = _playerHealthOriginal;
+        Application.LoadLevel(Application.loadedLevel);
+    }
+
+    void OnLevelWasLoaded(int level)
+    {
+        _playerHealthOriginal = _playerCurrentHealth;
     }
 }
