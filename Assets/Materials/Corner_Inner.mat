@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Floor_Tile
-  m_Shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
+  m_Name: Corner_Inner
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _NORMALMAP
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
@@ -18,14 +18,14 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: ff037367629dbe847b744cfb9dabec3a, type: 3}
+          m_Texture: {fileID: 2800000, guid: 7c959c889387f7543a867702ac2eb233, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _BumpMap
         second:
-          m_Texture: {fileID: 2800000, guid: d1970f55e3e6008468c54ec9f4b72202, type: 3}
+          m_Texture: {fileID: 2800000, guid: 51fd9edaf905c8648a9c27e1b8a8c641, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -46,7 +46,7 @@ Material:
         first:
           name: _OcclusionMap
         second:
-          m_Texture: {fileID: 2800000, guid: d998658ba5acc2748a7f525f878aa615, type: 3}
+          m_Texture: {fileID: 2800000, guid: 2370b54ec5459174ebc2ab634a1fa0fb, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -77,13 +77,6 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _SpecGlossMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
@@ -108,7 +101,7 @@ Material:
       data:
         first:
           name: _Glossiness
-        second: .535000026
+        second: .693000019
       data:
         first:
           name: _BumpScale
@@ -145,11 +138,7 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .808823526, g: .808823526, b: .808823526, a: 1}
-      data:
-        first:
-          name: _SpecColor
-        second: {r: .176470578, g: .176470578, b: .176470578, a: 1}
+        second: {r: .669117689, g: .669117689, b: .669117689, a: 1}
       data:
         first:
           name: _EmissionColorUI
