@@ -14,14 +14,30 @@ public class HealthController : MonoBehaviour
         _healthSlider = GetComponent<Slider>();
     }
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         _healthSlider.maxValue = _gameController.playerMaxHealth;
         _healthSlider.value = _gameController._playerCurrentHealth;
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         _healthSlider.value = _gameController._playerCurrentHealth;
-	}
+
+        if (_healthSlider.value <= 0)
+        {
+            foreach (Transform child in _healthSlider.transform)
+            {
+                if (child.name == "Fill Area")
+                {
+                    child.gameObject.SetActive(false);
+                }
+            }
+
+            _gameController.resetLevel();
+        }
+
+    }
 }
