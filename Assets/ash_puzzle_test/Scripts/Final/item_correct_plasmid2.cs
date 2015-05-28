@@ -8,8 +8,6 @@ public class item_correct_plasmid2 : MonoBehaviour {
 	public bool correctselect2;
 
 	void Start () {
-
-		correctselect2 = false;
 		scoreCounter = GameObject.FindGameObjectWithTag("PuzzleController");
 	}
 	

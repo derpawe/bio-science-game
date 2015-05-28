@@ -17,11 +17,9 @@ public class item_incorrect_plasmid2 : MonoBehaviour {
 	
 	void OnMouseDown() {
 		
-		score_counter scorecnt = scoreCounter.GetComponent<score_counter>(); 
+		timer timer = scoreCounter.GetComponent<timer> ();
 		
-		
-		scorecnt.score -= 1;
-		Debug.Log ("Score: " + scorecnt.score);
+		timer.DecreaseTime ();
 		
 	}
 }
