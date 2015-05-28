@@ -1,17 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class clicktest_down : MonoBehaviour {
+public class item_incorrect_plasmid1 : MonoBehaviour {
 	
 	public GameObject scoreCounter;
 	
-	
-	public static bool correctitem_down;
-	
 	void Start () {
-		
-		correctitem_down = false;
-		scoreCounter = GameObject.FindGameObjectWithTag("GameController");
+
+		scoreCounter = GameObject.FindGameObjectWithTag("PuzzleController");
 	}
 	
 	// Update is called once per frame
@@ -23,17 +19,9 @@ public class clicktest_down : MonoBehaviour {
 		
 		score_counter scorecnt = scoreCounter.GetComponent<score_counter>(); 
 		
-		if (correctitem_down == true)
-		{
-			scorecnt.score += 1;
-			Debug.Log ("Score: " + scorecnt.score);
-		}
-		
-		if (correctitem_down == false)
-		{
+	
 			scorecnt.score -= 1;
 			Debug.Log ("Score: " + scorecnt.score);
-		}
 		
 	}
 }
