@@ -40,7 +40,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMaxHealth: 100
-  decrementPlayerHealthValue: 1
+  decrementPlayerHealthValue: 5
   _playerCurrentHealth: 100
 --- !u!1001 &100100000
 Prefab:
