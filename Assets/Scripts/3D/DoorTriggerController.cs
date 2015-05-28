@@ -22,7 +22,14 @@ public class DoorTriggerController : MonoBehaviour {
         {
             Debug.Log("LOAD PUZZLE");
             int i = Application.loadedLevel;
-            Application.LoadLevel(i + 1);
+            if (Application.levelCount > i + 1)
+            {
+                Application.LoadLevel(i + 1);
+            }
+            else
+            {
+                Application.LoadLevel(0);
+            }
         }
     }
 }
