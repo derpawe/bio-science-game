@@ -11,7 +11,7 @@ GameObject:
   - 195: {fileID: 19592738}
   - 114: {fileID: 11495698}
   - 135: {fileID: 13526528}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 474878}
   - 65: {fileID: 6520904}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CatchTrigger
   m_TagString: CatchTrigger
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - 4: {fileID: 430410}
   - 33: {fileID: 3346154}
   - 23: {fileID: 2375334}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: guard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
