@@ -6,6 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/SplashScreen.unity
+  - enabled: 1
     path: Assets/Scenes/StartMenu.unity
   - enabled: 1
     path: Assets/Scenes/LevelStealth01.unity
