@@ -18,13 +18,13 @@ public class HealthController : MonoBehaviour
     void Start()
     {
         _healthSlider.maxValue = _gameController.playerMaxHealth;
-        _healthSlider.value = _gameController._playerCurrentHealth;
+        _healthSlider.value = _gameController.playerCurrentHealth;
     }
 
     // Update is called once per frame
     void Update()
     {
-        _healthSlider.value = _gameController._playerCurrentHealth;
+        _healthSlider.value = _gameController.playerCurrentHealth;
 
         if (_healthSlider.value <= 0)
         {

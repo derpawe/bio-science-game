@@ -5,7 +5,7 @@ using System.Collections;
 
 	public int score;
 	public bool complete;
-	public GameObject allCorrect;
+    private GameController _gameController;
 
 	public GameObject item_correct_plasmid1;
 	public GameObject item_correct_plasmid2;
@@ -13,7 +13,8 @@ using System.Collections;
 
 
 	void Awake(){
-		allCorrect = GameObject.FindGameObjectWithTag("GameController"); 
+        _gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+
 	}
 
 
@@ -41,8 +42,9 @@ using System.Collections;
 		if (complete == true) {
 			timer timer = GetComponent<timer>();
 			float timerleft = timer.timeLeft;
-				Debug.Log(allCorrect.GetComponent<GameController>()._playerCurrentHealth);
-			allCorrect.GetComponent<GameController>().UpdatePlayerHealth(timerleft);
+
+            Debug.Log(timerleft);
+		    _gameController.playerCurrentHealth += timerleft;
 			int i = Application.loadedLevel;
 			Application.LoadLevel(i + 1);
 			Debug.Log("Passed the puzzle!");

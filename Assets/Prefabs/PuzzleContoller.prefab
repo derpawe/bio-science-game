@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 435830}
   - 114: {fileID: 11408464}
+  - 114: {fileID: 11481192}
   m_Layer: 0
   m_Name: PuzzleContoller
   m_TagString: PuzzleController
@@ -23,7 +24,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 149578}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.63909101, y: -.309654236, z: 0}
+  m_LocalPosition: {x: -2.73000002, y: -2.27999997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -45,6 +46,19 @@ MonoBehaviour:
   item_correct_plasmid1: {fileID: 0}
   item_correct_plasmid2: {fileID: 0}
   item_correct_plasmid3: {fileID: 0}
+--- !u!114 &11481192
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e42a8cfafce5a4ccdb977e59c33a6207, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerSlider: {fileID: 0}
+  timeLeft: 10
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
