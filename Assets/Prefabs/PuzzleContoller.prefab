@@ -24,7 +24,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 149578}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.73000002, y: -2.27999997, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -42,10 +42,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   complete: 0
-  allCorrect: {fileID: 0}
   item_correct_plasmid1: {fileID: 0}
   item_correct_plasmid2: {fileID: 0}
   item_correct_plasmid3: {fileID: 0}
+  correctPlasmidAudioClip: {fileID: 8300000, guid: 01091a5178dd23c4faf1370699ffb54f,
+    type: 3}
+  wrongPlasmidAudioClip: {fileID: 8300000, guid: c6853548b1ea152489cb8c5f65669337,
+    type: 3}
+  puzzleTimeOutAudioClip: {fileID: 8300000, guid: 68b83d1c0ff8f1546938b60e3275b42f,
+    type: 3}
+  puzzleFinishedAudioClip: {fileID: 8300000, guid: a7da6aabddfd7764dbdb50b047fa1262,
+    type: 3}
 --- !u!114 &11481192
 MonoBehaviour:
   m_ObjectHideFlags: 1
