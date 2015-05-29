@@ -2312,15 +2312,15 @@ Prefab:
     - target: {fileID: 11408464, guid: a7ed4e20fe7f54373a89da7aa18aa74d, type: 2}
       propertyPath: item_correct_plasmid1
       value: 
-      objectReference: {fileID: 288358724}
+      objectReference: {fileID: 1337803839}
     - target: {fileID: 11408464, guid: a7ed4e20fe7f54373a89da7aa18aa74d, type: 2}
       propertyPath: item_correct_plasmid2
       value: 
-      objectReference: {fileID: 1510037567}
+      objectReference: {fileID: 425281345}
     - target: {fileID: 11408464, guid: a7ed4e20fe7f54373a89da7aa18aa74d, type: 2}
       propertyPath: item_correct_plasmid3
       value: 
-      objectReference: {fileID: 851520362}
+      objectReference: {fileID: 1159411543}
     - target: {fileID: 149578, guid: a7ed4e20fe7f54373a89da7aa18aa74d, type: 2}
       propertyPath: m_Name
       value: PuzzleController
