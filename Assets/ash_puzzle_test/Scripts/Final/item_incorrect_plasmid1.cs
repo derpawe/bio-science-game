@@ -20,6 +20,9 @@ public class item_incorrect_plasmid1 : MonoBehaviour {
 
 		timer timer = scoreCounter.GetComponent<timer> ();
 
+        score_counter scorecnt = scoreCounter.GetComponent<score_counter>();
+        scorecnt.playWrongPlasmidAudioClip();
+
 		timer.DecreaseTime ();
 		
 	}

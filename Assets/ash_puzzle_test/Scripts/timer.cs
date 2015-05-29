@@ -9,12 +9,16 @@ public class timer : MonoBehaviour {
 
 	public float timeLeft = 10.0f;
 
+    private score_counter _scoreCounter;
+
 	// Use this for initialization
 	void Start () {
 	
 		timerSlider.maxValue = timeLeft;
 
 		timerSlider.value = timeLeft;
+
+	    _scoreCounter = GetComponent<score_counter>();
 
 	}
 
@@ -24,9 +28,7 @@ public class timer : MonoBehaviour {
 		
 		if (timeLeft <= 0.0f)
 		{
-			// End the level here.
-			Debug.Log("You ran out of time");
-			Application.LoadLevel(Application.loadedLevel);
+		    StartCoroutine(_scoreCounter.playPuzzleTimeOutAudioClip());
 		}
 		else
 		{

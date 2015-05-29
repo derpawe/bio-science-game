@@ -18,6 +18,9 @@ public class item_incorrect_plasmid2 : MonoBehaviour {
 	void OnMouseDown() {
 		
 		timer timer = scoreCounter.GetComponent<timer> ();
+
+        score_counter scorecnt = scoreCounter.GetComponent<score_counter>();
+        scorecnt.playWrongPlasmidAudioClip();
 		
 		timer.DecreaseTime ();
 		

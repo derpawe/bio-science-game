@@ -5,6 +5,8 @@ public class DoorTriggerController : MonoBehaviour {
 
     private GameObject _player;
 
+    public AudioClip finishedClip;
+
     void Awake()
     {
         _player = GameObject.FindGameObjectWithTag("Player");
@@ -20,16 +22,25 @@ public class DoorTriggerController : MonoBehaviour {
     {
         if (collider.gameObject == _player)
         {
-            Debug.Log("LOAD PUZZLE");
-            int i = Application.loadedLevel;
-            if (Application.levelCount > i + 1)
-            {
-                Application.LoadLevel(i + 1);
-            }
-            else
-            {
-                Application.LoadLevel(0);
-            }
+            StartCoroutine(finishedLevel());
+        }
+    }
+
+    IEnumerator finishedLevel()
+    {
+        AudioSource.PlayClipAtPoint(finishedClip, transform.position, 1f);
+
+        yield return new WaitForSeconds(0.5f);
+
+        Debug.Log("LOAD PUZZLE");
+        int i = Application.loadedLevel;
+        if (Application.levelCount > i + 1)
+        {
+            Application.LoadLevel(i + 1);
+        }
+        else
+        {
+            Application.LoadLevel(0);
         }
     }
 }

@@ -19,6 +19,7 @@ public class item_correct_plasmid1 : MonoBehaviour {
 	
 	void OnMouseDown() {
 		score_counter scorecnt = scoreCounter.GetComponent<score_counter>(); 
+        scorecnt.playCorrectPlasmidAudioClip();
 		Debug.Log ("Score." + scorecnt.score);
 		scorecnt.score += 1;
 		Debug.Log ("Score: " + scorecnt.score);
