@@ -12,10 +12,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelStealth01.unity
   - enabled: 1
-    path: Assets/PlasmidPuzzle_1.unity
+    path: Assets/ash_puzzle_test/PlasmidPuzzle_1.unity
   - enabled: 1
     path: Assets/Scenes/LevelStealth02.unity
   - enabled: 1
+    path: Assets/ash_puzzle_test/PlasmidPuzzle_2.unity
+  - enabled: 1
     path: Assets/Scenes/LevelStealth03.unity
+  - enabled: 1
+    path: Assets/ash_puzzle_test/PlasmidPuzzle_3.unity
   - enabled: 1
     path: Assets/Scenes/LevelStealth04.unity
